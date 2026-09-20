@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yu-shuai-pu.github.io/sitemap.xml
