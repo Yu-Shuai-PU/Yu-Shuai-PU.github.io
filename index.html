@@ -103,8 +103,7 @@ section { margin: 0 0 40px; }
 .research-item { margin-bottom: 32px; }
 .research-item:last-of-type { margin-bottom: 0; }
 /* Figures are centred and sized as a share of the text width; height follows the image itself. */
-.research-figure { display: block; width: 50%; height: auto; margin: 0 auto 15px; }
-.research-figure--wide { width: 75%; }
+.research-figure { display: block; width: 75%; height: auto; margin: 0 auto 15px; }
 .research-item h3 { font-size: 17.5px; margin-bottom: 7px; }
 .research-item p { font-size: 14.5px; line-height: 1.65; margin-bottom: 8px; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; }
@@ -250,7 +249,7 @@ section { margin: 0 0 40px; }
       <article class="research-item">
         <div>
           <h3>Symmetry-reduced model reduction for shift-equivariant systems</h3>
-          <img class="research-figure" src="figures/sr-rom-fig2d.png" width="1205" height="777" loading="lazy" alt="Space-time contour plot of a Kuramoto-Sivashinsky solution u(x, t) over one spatial period in x and ten time units in t.">
+          <img class="research-figure" src="figures/cons2d-method.png" width="1975" height="886" loading="lazy" alt="Pipeline of the CONS2D method: snapshot data, template fitting to extract the shift, trajectory-based coupled learning that alternates between training the reduced dynamics with the subspaces fixed and training the subspaces with the dynamics realigned, then reconstruction of the full field.">
           <p>We develop data-driven reduced-order models of partial differential equations with shift equivariance. Such systems typically admit traveling solutions, which require many basis functions in a fixed reference frame. We instead represent the solution in a traveling reference frame, thereby obtaining a more compact representation. Existing methods such as operator inference then fit the reduced model directly from data, without knowledge of the full-order dynamics.</p>
           <p>We are now developing a joint optimization that learns the projection subspaces and the symmetry-reduced dynamics together.</p>
           <ul class="topic-papers">
@@ -283,7 +282,7 @@ section { margin: 0 0 40px; }
       <article class="research-item">
         <div>
           <h3>Structured input–output analysis of wall-bounded shear flows</h3>
-          <img class="research-figure research-figure--wide" src="figures/structured-io-block-diagram.png" width="1970" height="883" loading="lazy" alt="Block diagram of the structured input-output interconnection: the linear dynamics block H feeding a gradient block, closed by a structured feedback block, with the outer loop labelled H-nabla.">
+          <img class="research-figure" src="figures/structured-io-block-diagram.png" width="1970" height="883" loading="lazy" alt="Block diagram of the structured input-output interconnection: the linear dynamics block H feeding a gradient block, closed by a structured feedback block, with the outer loop labelled H-nabla.">
           <p>We studied the amplification and characteristic scales of oblique laminar–turbulent patterns in plane Couette–Poiseuille flow using structured input–output analysis.</p>
           <ul class="topic-papers">
             <li>
@@ -335,6 +334,8 @@ section { margin: 0 0 40px; }
     </section>
     <section id="talks" aria-labelledby="talks-heading">
       <h2 id="talks-heading">Talks and Academic Activities</h2>
+      <div class="activity"><time datetime="2026-11-22">2026</time><div><p><strong>79th APS Division of Fluid Dynamics Meeting</strong>, Orlando, FL, USA, November 22–24, 2026. <em>Scheduled</em></p><p><strong>Type:</strong> Oral presentation</p><p><strong>Title:</strong> Inferring Lagrangian Coherent Structures in the Atmospheric Surface Layer from Sparse Particle Measurements</p></div></div>
+      <div class="activity"><time datetime="2026-11-16">2026</time><div><p><strong>SIAM Conference on Mathematics of Data Science (MDS26)</strong>, Salt Lake City, UT, USA, November 16–20, 2026. <em>Scheduled</em></p><p><strong>Type:</strong> Minisymposium co-organizer (with Clarence W. Rowley) and oral presentation</p><p><strong>Title:</strong> Non-Intrusive Optimization of Reduced-Order Models for Shift-Equivariant Systems based on Symmetry Reduction <span class="muted">(minisymposium title: Data-Driven Nonlinear Reduced-Order Models for Transport-Dominated Systems)</span></p></div></div>
       <div class="activity"><time datetime="2025-11-23">2025</time><div><p><strong>78th APS Division of Fluid Dynamics Meeting</strong>, Houston, TX, USA, November 23–25, 2025.</p><p><strong>Type:</strong> Oral presentation</p><p><strong>Title:</strong> Non-Intrusive Model Reduction of Shift-Equivariant Systems via Data-Driven Projection and Symmetry-Reduced Dynamics</p></div></div>
       <div class="activity"><time datetime="2025-05-11">2025</time><div><p><strong>SIAM Conference on Applications of Dynamical Systems</strong>, Denver, CO, USA, May 11–15, 2025.</p><p><strong>Type:</strong> Minisymposium co-organizer (with Clarence W. Rowley) and oral presentation</p><p><strong>Title:</strong> Reduced-Order Modeling of Shift-Equivariant Systems Using Operator Inference <span class="muted">(minisymposium title: Reduced-Order Modeling of Fluid Flow with Coherent Structures)</span></p></div></div>
       <div class="activity"><time datetime="2024-11-24">2024</time><div><p><strong>77th APS Division of Fluid Dynamics Meeting</strong>, Salt Lake City, UT, USA, November 24–26, 2024.</p><p><strong>Type:</strong> Oral presentation</p><p><strong>Title:</strong> Neural Network-Based Closure Model of the Ensemble-Averaging Dynamics of Turbulent Puffs in Transitional Pipe Flow</p></div></div>
